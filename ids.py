@@ -7,7 +7,7 @@ import gzip, pickle, pickletools
 #for decompressing
 compressed_pkl = "ids_model_compressed.pkl"
 
-with gzip.open(filepath, 'rb') as f:
+with gzip.open(compressed_pkl, 'rb') as f:
     p = pickle.Unpickler(f)
     model = p.load()       
 
