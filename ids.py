@@ -2,6 +2,7 @@ from pycaret.classification import load_model, predict_model
 import streamlit as st
 import pandas as pd
 import numpy as np
+import gzip, pickle, pickletools
 
 #for decompressing
 compressed_pkl = "ids_model_compressed.pkl"
