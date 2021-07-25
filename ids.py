@@ -40,8 +40,7 @@ def run():
             predictions = predict_model(estimator=model,data=data)
             st.write(predictions)
 			
-			
-	if add_selectbox == 'Online':
+    if add_selectbox == 'Online':
         duration = st.number_input('duration',  min_value=0, max_value=100000, value=0)
         protocol_type = st.selectbox('protocol_type', ['icmp', 'tcp','udp'])
         service = st.selectbox('service', ['ftp_data','other','private','http','remote_job','name','netbios_ns','eco_i','mtp','telnet','finger','domain_u','supdup','uucp_path','Z39_50','smtp','csnet_ns','uucp','netbios_dgm','urp_i','auth','domain','ftp','bgp','ldap','ecr_i','gopher','vmnet','systat','http_443','efs','whois','imap4','iso_tsap','echo','klogin','link','sunrpc','login','kshell','sql_net','time','hostnames','exec','ntp_u','discard','nntp','courier','ctf','ssh','daytime','shell','netstat','pop_3','nnsp','IRC','pop_2','printer','tim_i','pm_dump','red_i','netbios_ssn','rje','X11','urh_i','http_8001','aol','http_2784','tftp_u','harvest'])
