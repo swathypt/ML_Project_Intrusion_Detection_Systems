@@ -79,8 +79,7 @@ def run():
         difficulty_level = st.number_input('difficulty_level',  min_value=0, max_value=100000, value=0)
 
         output=""
-        input_dict= {'attack_flag':attack_flag,
-                     'count':count,
+        input_dict= {'count':count,
                      'diff_srv_rate':diff_srv_rate,
                      'difficulty_level':difficulty_level,
                      'dst_bytes':dst_bytes,
