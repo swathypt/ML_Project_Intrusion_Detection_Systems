@@ -46,7 +46,7 @@ def run():
         service = st.selectbox('service', ['ftp_data','other','private','http','remote_job','name','netbios_ns','eco_i','mtp','telnet','finger','domain_u','supdup','uucp_path','Z39_50','smtp','csnet_ns','uucp','netbios_dgm','urp_i','auth','domain','ftp','bgp','ldap','ecr_i','gopher','vmnet','systat','http_443','efs','whois','imap4','iso_tsap','echo','klogin','link','sunrpc','login','kshell','sql_net','time','hostnames','exec','ntp_u','discard','nntp','courier','ctf','ssh','daytime','shell','netstat','pop_3','nnsp','IRC','pop_2','printer','tim_i','pm_dump','red_i','netbios_ssn','rje','X11','urh_i','http_8001','aol','http_2784','tftp_u','harvest'])
         flag = st.selectbox('flag', ['REJ','SF','RSTO','S0','RSTR','SH','S3','S2','S1','RSTOS0','OTH'])
         src_bytes = st.number_input('src_bytes', value=0)
-        dst_bytes = st.number_input('duration', value=0)
+        dst_bytes = st.number_input('dst_bytes', value=0)
         land = st.selectbox('land', [0,1])
         wrong_fragment = st.number_input('wrong_fragment',  min_value=0, max_value=10, value=0)
         urgent = st.selectbox('urgent', [0,1,2,3])
