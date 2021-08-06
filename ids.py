@@ -123,7 +123,7 @@ def run():
 					'dst_host_serror_rate':dst_host_serror_rate,
 					'dst_host_srv_serror_rate':dst_host_srv_serror_rate,
 					'dst_host_rerror_rate':dst_host_rerror_rate,
-					'dst_host_srv_rerror_rate':dst_host_srv_rerror_rate,
+					'dst_host_srv_rerror_rate':dst_host_srv_rerror_rate}
         input_df = pd.DataFrame([input_dict])
         if st.button("Predict"):
             output = predict(model=model, input_df=input_df)
