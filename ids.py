@@ -82,6 +82,7 @@ def run():
         dst_host_srv_serror_rate = st.number_input('dst_host_srv_serror_rate',  min_value=0, max_value=100000, value=0)
         dst_host_rerror_rate = st.number_input('dst_host_rerror_rate',  min_value=0, max_value=100000, value=0)
         dst_host_srv_rerror_rate = st.number_input('dst_host_srv_rerror_rate',  min_value=0, max_value=100000, value=0)
+	difficulty_level = st.number_input('difficulty_level',  min_value=0, max_value=100000, value=0)
         output=""
         input_dict= {'duration':duration,
 					'protocol_type':protocol_type,
@@ -123,7 +124,8 @@ def run():
 					'dst_host_serror_rate':dst_host_serror_rate,
 					'dst_host_srv_serror_rate':dst_host_srv_serror_rate,
 					'dst_host_rerror_rate':dst_host_rerror_rate,
-					'dst_host_srv_rerror_rate':dst_host_srv_rerror_rate}
+					'dst_host_srv_rerror_rate':dst_host_srv_rerror_rate,
+		                        'difficulty_level':difficulty_level}
         input_df = pd.DataFrame([input_dict])
         if st.button("Predict"):
             output = predict(model=model, input_df=input_df)
