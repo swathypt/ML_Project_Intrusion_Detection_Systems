@@ -49,7 +49,7 @@ def run():
         dst_bytes = st.number_input('duration', value=0)
         land = st.selectbox('land', [0,1])
         wrong_fragment = st.number_input('wrong_fragment',  min_value=0, max_value=10, value=0)
-        urgent = st.number_input('urgent', [0,1,2,3])
+        urgent = st.selectbox('urgent', [0,1,2,3])
         num_failed_logins = st.number_input('num_failed_logins',  min_value=0, max_value=10, value=0)
         logged_in = st.selectbox('logged_in', [0,1])
         num_compromised = st.number_input('num_compromised',  min_value=0, max_value=100000, value=0)
