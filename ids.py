@@ -50,7 +50,7 @@ def run():
         land = st.selectbox('land', [0,1])
         wrong_fragment = st.number_input('wrong_fragment',  min_value=0, max_value=10, value=0)
         urgent = st.selectbox('urgent', [0,1,2,3])
-	hot = st.number_input('wrong_fragment',  min_value=0, max_value=100000, value=0)
+	hot = st.number_input('hot',  min_value=0, max_value=100000, value=0)
         num_failed_logins = st.number_input('num_failed_logins',  min_value=0, max_value=10, value=0)
         logged_in = st.selectbox('logged_in', [0,1])
         num_compromised = st.number_input('num_compromised',  min_value=0, max_value=100000, value=0)
